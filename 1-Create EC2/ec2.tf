@@ -10,7 +10,7 @@ provider "aws" {
 # Below is the resource block which creates EC2 Instance
 resource "aws_instance" "JJTech_Instance" {
   ami           = "ami-036f5574583e16426"
-  instance_type = "t2.micro"
+  instance_type = "t2.nano"
   subnet_id     = "subnet-0e16e135ccb70c015"
   tags = {
     Name = "JJTech-desired-EC2"
